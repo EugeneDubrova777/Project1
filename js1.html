@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td {
+            border: 1px solid #8b1919
+        }
+    </style>
+</head>
+<body>
+
+    <div id="box">
+    <!-- <table>
+        <tbody>
+            <tr>
+                <td>Ячёйка 1</td>
+                <td>Ячёйка 2</td>
+                <td>Ячёйка 3</td>
+                <td>Ячёйка 4</td>
+                <td>Ячёйка 5</td>
+            </tr>
+            <tr>
+                <td>Ячёйка 1</td>
+                <td>Ячёйка 2</td>
+                <td>Ячёйка 3</td>
+                <td>Ячёйка 4</td>
+                <td>Ячёйка 5</td>
+            </tr>
+            <tr>
+                <td>Ячёйка 1</td>
+                <td>Ячёйка 2</td>
+                <td>Ячёйка 3</td>
+                <td>Ячёйка 4</td>
+                <td>Ячёйка 5</td>
+            </tr>
+        </tbody> 
+    
+    </table> -->
+
+    <script>
+        let n = 1;
+
+        let tab = "<table><tbody>";
+            let col = +prompt("Сколько столбцов?");
+            let row = +prompt("Сколько строк?");
+            
+            
+
+            for (i=1; i<=row; i++){
+                tab += "<tr>"
+                    for (j=1; j<=col; j++) {
+                        tab += `<td>Ячёйка ${n++}</td>`;
+
+                    }
+
+                tab += "</tr>"    
+            }
+
+
+            tab += "</table></tbody>";
+
+
+            box.innerHTML = tab;
+            console.log(tab);
+            
+
+
+
+
+
+
+
+
+    </script>
+
+    
+</body>
+</html>
